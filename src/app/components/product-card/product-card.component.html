@@ -1,0 +1,21 @@
+<div class = "main">
+    <div id="image">
+        <img [src] = "produit.image"/>
+    </div>
+    <div id="titrePrix">
+        <h3>{{produit.titre}}</h3>
+        <p>{{produit.prix}}€</p>
+    </div>
+    <div id="quantite">
+        <p>Quantité : </p>
+        <p id="etat">{{produit.etat}}</p>
+        <div>
+            <button (click)="deleteQuantity()">-</button>
+            <button (click)="addQuantity()">+</button>
+        </div>
+    </div>
+    <p id="message">{{message}}</p>
+    <div id="boutonPanier">
+        <button>Ajouter au panier</button>
+    </div>
+</div>
